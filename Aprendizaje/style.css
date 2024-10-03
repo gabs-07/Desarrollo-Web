@@ -1,0 +1,30 @@
+body {
+    margin: 0; /* Elimina márgenes predeterminados del body */
+}
+
+.intMain{
+    background-color: black;
+}
+
+
+.boxPadre{
+    background-color: bisque;
+    width: 100px; /*Ancho*/
+    height: 100px; /*Altura*/
+    /* RELLENO ->padding: 100px;*/
+    display: grid;
+    place-content: center;
+}
+
+.boxHijo{
+    background-color: blueviolet;
+    display: grid;
+    place-content: center;
+}
+
+/*Tamañosde media*/
+@media screen and (max-width: 600px) {
+    .intMain{
+        background-color: aquamarine;
+    }
+}

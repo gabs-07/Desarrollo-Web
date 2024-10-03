@@ -1,0 +1,39 @@
+
+body{
+    margin: 0;
+}
+.contenedorFlex{
+    background-color: blueviolet;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.elemento{
+    background: white;
+    color: black;
+    margin: 10px;
+    padding: 10px;
+}
+
+.contenedorFlexDos{
+    background-color: black;
+    display: flex;
+    flex-direction: column;
+    margin: 0;
+    width: auto;
+    justify-content: center;
+    align-items: center;
+}
+
+.elementoUno{
+    background-color: bisque;
+    color: black;
+    margin: 10px;
+    padding: 5px;
+    text-align: center;
+    width: 75px;
+    justify-content: center;
+    align-items: center;
+}
+
