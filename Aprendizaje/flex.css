@@ -5,6 +5,7 @@ body{
 .contenedorFlex{
     background-color: blueviolet;
     display: flex;
+    flex-direction: wrap;
     justify-content: center;
     align-items: center;
 }
