@@ -1,0 +1,28 @@
+body {
+    margin: 0;
+    background-color: bisque;
+}
+
+.seccionServicio {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+}
+
+.seccionServicioUno {
+    background-color: red;
+    padding: 10px;
+    width: 100%; /*Ancho*/
+    height: 300px; /*Altura*/
+    margin: 1px;
+
+}
+
+.seccionServicioDos {
+    background-color: blue;
+    padding: 10px;
+    width: 100%; /*Ancho*/
+    height: 300px; /*Altura*/
+    margin: 1px;
+}
