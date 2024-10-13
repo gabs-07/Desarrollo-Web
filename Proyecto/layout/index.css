@@ -1,16 +1,99 @@
-:root{
-    temaClaro:#FFFFFF;
-    temaOscuro:#000000; 
+:root {
+    --temaClaro: #FFFFFF;
+    --temaOscuro: #000000; 
+    --fuente: Arial, sans-serif;
 }
 
-*{
+* {
     margin: 0;
+    padding: 0;
+    box-sizing: border-box;
 }
 
-.barraDeNavegacion{
+body {
+    font-family: var(--fuente);
+}
+
+.barraDeNavegacion {
     background-image: url(../src/imagenes/banner.png);
     background-repeat: no-repeat;
     background-size: cover;
     width: 100%;
     height: 500px;
+}
+
+.contenedor {
+    background: rgba(0, 0, 0, 0.8);
+    width: 100%;
+    height: 500px;
+}
+
+.navegacion {
+    display: grid;
+    grid-template-columns: 1fr 3fr; 
+    gap: 1em;
+    padding: 1rem;
+}
+
+.navegacion > div {
+    padding: 1rem;
+    
+}
+
+.navElementoUno{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+}
+
+.navElementoUno a {
+    color: var(--temaClaro);
+    font-size: 2rem;
+    font-weight: bold;
+    text-decoration: none;
+    transition: color 0.5s ease;
+}
+
+
+.navElementoUno a:hover {
+    color: #f0a500; 
+}
+
+.navElementoDos ul {
+    display: flex;
+    justify-content: flex-end;
+    gap: 3rem;
+}
+
+.navElementoDos ul li a {
+    color: var(--temaClaro);
+    text-decoration: none;
+    font-size: 20px;
+    transition: color 0.3s ease;
+}
+
+.navElementoDos ul li a:hover {
+    color: #f0a500; 
+}
+
+.eslogan{
+    width: 100%;
+    height: 400px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.tituloEmpresa{
+    color: var(--temaClaro);
+    font-weight: bold;
+    font-size: 3rem;
+}
+
+.textoEslogan{
+    color: var(--temaClaro);
+    font-size: 30px;
+    font-style: italic;
 }
