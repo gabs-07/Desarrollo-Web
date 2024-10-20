@@ -1,0 +1,65 @@
+:root{
+    --textoOscuro: #000000;
+    --textoClaro: #FFFFFF;
+    --colorPrimario: #3c3744;
+    --colorSecundario: #090c9b;
+    --colorTerciario: #3066be;
+    --colorAuxiliar: #b4c5e4;
+    --textoTitulo: 'Montserrat', sans-serif;
+    --texto: 'Roboto', sans-serif;
+}
+
+*{
+    box-sizing: border-box;
+    margin: 0;
+    border: 0;
+    padding: 0;
+}
+
+body{
+    background: var(--colorPrimario);
+    font-family: var(--texto);
+    font-size: 2rem;
+}
+
+.seccionDePeliculas{
+    background: var(--fondo);
+    display: flex;
+    flex-direction: column; 
+    justify-content: center;
+    align-items: center;
+    gap: 2rem;
+    /*border: var(--colorAuxiliar) solid;*/
+    padding: 10px;
+}
+
+.seccionDePeliculas h2{
+    color: var(--textoClaro);
+    font-family: var(--textoTitulo);
+}
+
+.peliculasFavoritas{
+    background: var(--fondoOscuro);
+    color: var(--textoClaro);
+    font-family: var(--texto);
+    font-size: 20px;
+    display: flex;
+    flex-direction: row;  
+    gap: 30px;
+}
+
+.peliculasFavoritas div{
+    width: 240px;
+    height: auto;
+}
+
+.peliculasFavoritas div img{
+    border-radius: 1rem;
+    width: 240px;
+    height: 400px;
+}
+
+
+.peliculasFavoritas div img:hover{
+    border: var(--colorAuxiliar) solid 2px;
+}
